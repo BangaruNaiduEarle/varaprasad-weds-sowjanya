@@ -1,0 +1,349 @@
+/*
+ * Footer grand finale — luxury invitation paper aesthetic.
+ * ~70% light tones · ~20% gold · ~10% maroon accents
+ */
+
+.site-footer-finale {
+  --sf-gold: #d4af37;
+  --sf-yellow: #efbf04;
+  --sf-maroon: #800020;
+  --sf-kumkuma: #800020;
+  --sf-champagne: #f7e7ce;
+  --sf-ivory: #fff8f0;
+  --sf-cream: #f5efe6;
+  --sf-charcoal: #3d3632;
+  --sf-warm-gray: #5c534c;
+  --sf-deep-brown: #4a3f38;
+
+  background: linear-gradient(
+    180deg,
+    var(--sf-ivory) 0%,
+    color-mix(in srgb, var(--sf-champagne) 55%, var(--sf-ivory)) 45%,
+    color-mix(in srgb, var(--sf-cream) 80%, var(--sf-champagne)) 100%
+  );
+}
+
+.site-footer-finale::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 30%,
+    color-mix(in srgb, var(--sf-gold) 6%, transparent) 0%,
+    transparent 68%
+  );
+}
+
+.site-footer-finale__shell {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 38rem;
+  margin-inline: auto;
+  padding: 3rem 1.25rem 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .site-footer-finale__shell {
+    max-width: 44rem;
+    padding: 4rem 2rem 2.75rem;
+  }
+}
+
+/* ── Invitation paper card ── */
+
+.site-footer-finale__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.35rem;
+  border: 1px solid color-mix(in srgb, var(--sf-gold) 45%, transparent);
+  background: linear-gradient(
+    165deg,
+    var(--sf-ivory) 0%,
+    color-mix(in srgb, var(--sf-champagne) 42%, var(--sf-ivory)) 55%,
+    color-mix(in srgb, var(--sf-cream) 35%, var(--sf-champagne)) 100%
+  );
+  box-shadow:
+    0 4px 24px color-mix(in srgb, var(--sf-gold) 10%, transparent),
+    0 16px 48px color-mix(in srgb, var(--sf-deep-brown) 6%, transparent),
+    inset 0 1px 0 color-mix(in srgb, var(--sf-ivory) 95%, transparent);
+  padding: 2.75rem 1.5rem 2.25rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .site-footer-finale__card {
+    border-radius: 1.5rem;
+    padding: 3.25rem 2.5rem 2.75rem;
+  }
+}
+
+/* ── Couple names (maroon accent) ── */
+
+.site-footer-finale__names {
+  margin-bottom: 0.25rem;
+}
+
+.site-footer-finale__groom,
+.site-footer-finale__bride {
+  font-family: var(--font-script), var(--font-heading), serif;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: var(--sf-maroon);
+  text-shadow: 0 2px 20px color-mix(in srgb, var(--sf-gold) 22%, transparent);
+}
+
+.site-footer-finale__groom {
+  font-size: clamp(2.125rem, 8.5vw, 3.375rem);
+}
+
+.site-footer-finale__amp {
+  display: block;
+  margin: 0.4rem 0;
+  font-family: var(--font-script);
+  font-size: clamp(1.625rem, 5.5vw, 2.25rem);
+  line-height: 1;
+  color: var(--sf-gold);
+  opacity: 0.88;
+}
+
+.site-footer-finale__bride {
+  font-size: clamp(2.125rem, 8.5vw, 3.375rem);
+}
+
+.site-footer-finale__name-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 1.35rem auto 0;
+  max-width: 14rem;
+}
+
+.site-footer-finale__name-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--sf-gold), transparent);
+  opacity: 0.55;
+}
+
+.site-footer-finale__name-divider-gem {
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background: var(--sf-gold);
+  opacity: 0.75;
+  transform: rotate(45deg);
+}
+
+/* ── Date seal badge ── */
+
+.site-footer-finale__date-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0.55rem 1.35rem;
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--sf-gold) 55%, var(--sf-yellow));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--sf-yellow) 35%, var(--sf-champagne)) 0%,
+    color-mix(in srgb, var(--sf-gold) 28%, var(--sf-champagne)) 100%
+  );
+  box-shadow:
+    0 3px 14px color-mix(in srgb, var(--sf-gold) 18%, transparent),
+    inset 0 1px 0 color-mix(in srgb, var(--sf-ivory) 50%, transparent);
+  font-family: var(--font-section);
+  font-size: clamp(0.625rem, 2.5vw, 0.6875rem);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--sf-maroon);
+}
+
+/* ── Blessings ── */
+
+.site-footer-finale__blessings {
+  margin-top: 2rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 3.4vw, 1.0625rem);
+  font-weight: 400;
+  line-height: 1.85;
+  color: var(--sf-charcoal);
+  max-width: 30rem;
+  margin-inline: auto;
+}
+
+/* ── Emotional quote ── */
+
+.site-footer-finale__note {
+  margin-top: 1.35rem;
+  font-family: var(--font-heading);
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.75;
+  color: var(--sf-maroon);
+  opacity: 0.88;
+  max-width: 28rem;
+  margin-inline: auto;
+}
+
+/* ── Social icons ── */
+
+.site-footer-finale__social {
+  display: flex;
+  justify-content: center;
+  gap: 0.875rem;
+  margin-top: 2rem;
+}
+
+.site-footer-finale__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border-radius: 9999px;
+  border: 1.5px solid color-mix(in srgb, var(--sf-gold) 50%, transparent);
+  background: linear-gradient(
+    145deg,
+    var(--sf-champagne) 0%,
+    color-mix(in srgb, var(--sf-ivory) 70%, var(--sf-champagne)) 100%
+  );
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--sf-gold) 8%, transparent);
+  color: var(--sf-maroon);
+  text-decoration: none;
+  transition:
+    box-shadow 0.28s ease,
+    transform 0.28s ease;
+}
+
+.site-footer-finale__social-btn:hover {
+  box-shadow: 0 4px 18px color-mix(in srgb, var(--sf-gold) 28%, transparent);
+}
+
+@media (min-width: 768px) {
+  .site-footer-finale__social-btn {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+}
+
+/* ── Copyright ── */
+
+.site-footer-finale__copyright {
+  margin-top: 1.75rem;
+  font-family: var(--font-section);
+  font-size: 0.5625rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+  color: color-mix(in srgb, var(--sf-warm-gray) 72%, var(--sf-gold));
+  opacity: 0.85;
+}
+
+/* ── Mandala watermark (barely visible) ── */
+
+.site-footer-finale__mandala-watermark {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.site-footer-finale__mandala-watermark img {
+  width: min(80vw, 24rem);
+  height: auto;
+  object-fit: contain;
+  opacity: 0.028;
+  filter: blur(1.5px);
+}
+
+/* ── Ambient: minimal bokeh & particles ── */
+
+.site-footer-finale__bokeh {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--sf-gold) 14%, transparent) 0%,
+    transparent 72%
+  );
+}
+
+.site-footer-finale__particle {
+  pointer-events: none;
+  position: absolute;
+  width: 1.5px;
+  height: 1.5px;
+  border-radius: 9999px;
+  background: var(--sf-gold);
+}
+
+.site-footer-finale__petal {
+  pointer-events: none;
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  border-radius: 50% 50% 50% 0;
+  background: color-mix(in srgb, var(--sf-gold) 45%, var(--sf-champagne));
+  opacity: 0.14;
+}
+
+/* ── Corner diyas ── */
+
+.site-footer-finale__diya {
+  position: absolute;
+  z-index: 1;
+  width: 1.65rem;
+  height: 2.1rem;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .site-footer-finale__diya {
+    width: 1.85rem;
+    height: 2.35rem;
+    opacity: 0.55;
+  }
+}
+
+.site-footer-finale__diya--tl {
+  top: 1.25rem;
+  left: 1rem;
+}
+
+.site-footer-finale__diya--tr {
+  top: 1.25rem;
+  right: 1rem;
+  transform: scaleX(-1);
+}
+
+.site-footer-finale__diya--bl {
+  bottom: 1.25rem;
+  left: 1rem;
+  transform: scaleY(-1);
+}
+
+.site-footer-finale__diya--br {
+  bottom: 1.25rem;
+  right: 1rem;
+  transform: scale(-1);
+}
+
+html[data-locale="te"] .site-footer-finale__groom,
+html[data-locale="te"] .site-footer-finale__bride {
+  font-family: var(--font-telugu-heading), var(--font-script), serif;
+}

@@ -1,0 +1,279 @@
+/*
+ * Scoped styles for experimental Celebrations invitation cards.
+ * Imported only by CelebrationsInvitationSection — no global side effects.
+ */
+
+.celebrations-invitation {
+  --ci-gold: #d4af37;
+  --ci-yellow: #efbf04;
+  --ci-maroon: #6b0f1a;
+  --ci-kumkuma: #800020;
+  --ci-champagne: #f7e7ce;
+  --ci-ivory: #fff8f0;
+  --ci-cream: #f5efe6;
+  --ci-navy: #1d2635;
+}
+
+.celebrations-invitation__header {
+  padding: 3.5rem 1.25rem 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .celebrations-invitation__header {
+    padding-top: 4rem;
+    text-align: left;
+    max-width: 56rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+  }
+}
+
+.celebrations-invitation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  max-width: 56rem;
+  margin-inline: auto;
+  padding: 2rem 1rem 9rem;
+}
+
+@media (min-width: 768px) {
+  .celebrations-invitation__list {
+    padding: 2.5rem 2rem 10rem;
+    gap: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .celebrations-invitation__list {
+    max-width: 64rem;
+    padding-inline: 2.5rem;
+  }
+}
+
+/* ── Card shell ── */
+.celebrations-invitation__card-wrap {
+  width: 100%;
+  max-width: 100%;
+}
+
+.celebrations-invitation__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1.5px solid color-mix(in srgb, var(--ci-gold) 45%, transparent);
+  box-shadow:
+    0 4px 20px color-mix(in srgb, var(--ci-gold) 14%, transparent),
+    0 16px 48px color-mix(in srgb, var(--ci-maroon) 8%, transparent);
+  background: color-mix(in srgb, var(--ci-ivory) 94%, transparent);
+}
+
+/* Mobile: portrait — tall card, image stacked above content */
+.celebrations-invitation__card-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  min-height: 28rem;
+}
+
+.celebrations-invitation__top-border {
+  height: 4px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.celebrations-invitation__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 13rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.celebrations-invitation__media img,
+.celebrations-invitation__media picture,
+.celebrations-invitation__media > div {
+  width: 100%;
+  height: 100%;
+}
+
+.celebrations-invitation__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.35rem 1.25rem 1.75rem;
+  flex: 1;
+}
+
+.celebrations-invitation__date-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.celebrations-invitation__date-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--ci-gold) 35%, transparent);
+  background: color-mix(in srgb, var(--ci-champagne) 70%, var(--ci-ivory));
+}
+
+.celebrations-invitation__divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.85rem 0;
+}
+
+.celebrations-invitation__divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--ci-gold), transparent);
+}
+
+/* Tablet+: landscape card */
+@media (min-width: 768px) {
+  .celebrations-invitation__card-inner {
+    flex-direction: row;
+    min-height: 17.5rem;
+  }
+
+  .celebrations-invitation__media {
+    width: 42%;
+    aspect-ratio: unset;
+    min-height: 17.5rem;
+  }
+
+  .celebrations-invitation__body {
+    width: 58%;
+    padding: 1.75rem 1.75rem 1.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .celebrations-invitation__card-inner {
+    min-height: 20rem;
+  }
+
+  .celebrations-invitation__media {
+    width: 48%;
+    min-height: 20rem;
+  }
+
+  .celebrations-invitation__body {
+    width: 52%;
+    padding: 2rem 2.25rem;
+  }
+}
+
+/* Separator between cards (mobile-first) */
+.celebrations-invitation__separator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .celebrations-invitation__separator {
+    padding: 2.5rem 0;
+  }
+}
+
+.celebrations-invitation__separator-ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: min(100%, 14rem);
+}
+
+.celebrations-invitation__separator-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--ci-gold), transparent);
+}
+
+.celebrations-invitation__mandala-watermark {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.celebrations-invitation__mandala-watermark img {
+  width: 72%;
+  height: auto;
+  max-height: 88%;
+  object-fit: contain;
+  opacity: var(--ci-mandala-opacity, 0.06);
+}
+
+@media (min-width: 768px) {
+  .celebrations-invitation__mandala-watermark img {
+    width: 50%;
+  }
+}
+
+.celebrations-invitation__mandala-corner {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: var(--ci-corner-opacity, 0.08);
+}
+
+.celebrations-invitation__mandala-corner--tl {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.celebrations-invitation__mandala-corner--tr {
+  top: 0.5rem;
+  right: 0.5rem;
+  transform: scaleX(-1);
+}
+
+.celebrations-invitation__mandala-corner--bl {
+  bottom: 0.5rem;
+  left: 0.5rem;
+  transform: scaleY(-1);
+}
+
+.celebrations-invitation__mandala-corner--br {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  transform: scale(-1);
+}
+
+.celebrations-invitation__inner-frame {
+  pointer-events: none;
+  position: absolute;
+  inset: 0.5rem;
+  z-index: 1;
+  border-radius: 0.85rem;
+  border: 1px solid color-mix(in srgb, var(--ci-gold) 22%, transparent);
+}
+
+.celebrations-invitation__ribbon {
+  position: absolute;
+  top: 1.25rem;
+  right: -2rem;
+  z-index: 4;
+  width: 9rem;
+  height: 1.75rem;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--ci-maroon) 30%, transparent);
+}

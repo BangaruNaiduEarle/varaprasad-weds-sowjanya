@@ -1,0 +1,288 @@
+/*
+ * Scoped styles for experimental Wedding Wishes section.
+ * Imported only by WishesBlessingsSection — no global side effects.
+ */
+
+.wishes-blessings {
+  --wb-gold: #d4af37;
+  --wb-maroon: #6b0f1a;
+  --wb-ivory: #fff8f0;
+  --wb-champagne: #f7e7ce;
+}
+
+.wishes-blessings__header {
+  text-align: center;
+  padding: 3.5rem 1.25rem 0;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.wishes-blessings__grid {
+  display: none;
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: 2rem 1.25rem 9rem;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .wishes-blessings__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 2rem;
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wishes-blessings__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-inline: 2.5rem;
+  }
+}
+
+.wishes-blessings__carousel-wrap {
+  padding: 1.5rem 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .wishes-blessings__carousel-wrap {
+    display: none;
+  }
+}
+
+.wishes-blessings__carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 7.5vw 1rem;
+  scrollbar-width: none;
+}
+
+.wishes-blessings__carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.wishes-blessings__carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+.wishes-blessings__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 22rem;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1.5px solid color-mix(in srgb, var(--wb-gold) 42%, transparent);
+  background: color-mix(in srgb, var(--wb-ivory) 96%, transparent);
+  box-shadow:
+    0 2px 12px color-mix(in srgb, #1d2635 5%, transparent),
+    0 12px 36px color-mix(in srgb, var(--wb-gold) 12%, transparent),
+    0 4px 16px color-mix(in srgb, var(--wb-maroon) 5%, transparent);
+}
+
+@media (min-width: 768px) {
+  .wishes-blessings__card {
+    min-height: 20rem;
+  }
+}
+
+.wishes-blessings__card-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem 1.35rem 1.65rem;
+}
+
+@media (min-width: 768px) {
+  .wishes-blessings__card-inner {
+    padding: 1.65rem 1.5rem 1.75rem;
+  }
+}
+
+.wishes-blessings__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.wishes-blessings__avatar-ring {
+  position: relative;
+  padding: 3px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, var(--wb-gold), #efbf04, var(--wb-gold));
+  box-shadow: 0 0 20px color-mix(in srgb, var(--wb-gold) 25%, transparent);
+}
+
+.wishes-blessings__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 9999px;
+  border: 2px solid var(--wb-ivory);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--wb-maroon);
+}
+
+.wishes-blessings__badge {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.85rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid;
+  font-family: var(--font-section);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.wishes-blessings__divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.wishes-blessings__divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--wb-gold), transparent);
+}
+
+.wishes-blessings__message {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.85;
+  color: #1d2635;
+}
+
+@media (min-width: 768px) {
+  .wishes-blessings__message {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+.wishes-blessings__footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  text-align: right;
+}
+
+.wishes-blessings__mandala-watermark {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.wishes-blessings__mandala-watermark img {
+  width: 70%;
+  max-height: 80%;
+  object-fit: contain;
+  opacity: var(--wb-mandala-opacity, 0.06);
+}
+
+.wishes-blessings__mandala-corner {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: var(--wb-corner-opacity, 0.08);
+}
+
+.wishes-blessings__mandala-corner--tl {
+  top: 0.35rem;
+  left: 0.35rem;
+}
+
+.wishes-blessings__mandala-corner--tr {
+  top: 0.35rem;
+  right: 0.35rem;
+  transform: scaleX(-1);
+}
+
+.wishes-blessings__mandala-corner--bl {
+  bottom: 0.35rem;
+  left: 0.35rem;
+  transform: scaleY(-1);
+}
+
+.wishes-blessings__mandala-corner--br {
+  bottom: 0.35rem;
+  right: 0.35rem;
+  transform: scale(-1);
+}
+
+.wishes-blessings__inner-frame {
+  pointer-events: none;
+  position: absolute;
+  inset: 0.45rem;
+  z-index: 1;
+  border-radius: 0.85rem;
+  border: 1px solid color-mix(in srgb, var(--wb-gold) 20%, transparent);
+}
+
+.wishes-blessings__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.75rem 0 0.25rem;
+}
+
+.wishes-blessings__swipe-hint {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: #1d2635;
+  opacity: 0.75;
+  padding: 0.5rem 1rem 0;
+}
+
+.wishes-blessings__header-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem auto 0;
+  max-width: 16rem;
+}
+
+.wishes-blessings__header-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--wb-gold), transparent);
+}
+
+.wishes-blessings__cta-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.25rem 9rem;
+}
+
+@media (min-width: 768px) {
+  .wishes-blessings__cta-wrap {
+    padding-bottom: 10rem;
+  }
+}

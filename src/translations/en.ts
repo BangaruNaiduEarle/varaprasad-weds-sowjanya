@@ -1,0 +1,125 @@
+import type { Translations } from "./types";
+
+export const en: Translations = {
+  common: {
+    scene: "Scene",
+    sceneFinal: "Scene VI · The Final Chapter",
+    togetherForever: "Together Forever",
+    withLoveGratitude: "with love & gratitude",
+    days: "Days",
+    hours: "Hours",
+    mins: "Mins",
+    secs: "Secs",
+    theDayIsHere: "The day is here",
+    swipeWishes: "Swipe to read more wishes →",
+    venue: "Venue",
+    callUs: "Call Us",
+    email: "Email",
+    languageLabel: "Choose language",
+    english: "English",
+    telugu: "తెలుగు",
+  },
+  nav: {
+    heart: "Home",
+    story: "Story",
+    events: "Events",
+    gallery: "Gallery",
+    blessings: "Blessings",
+    location: "Location",
+  },
+  hero: {
+    subtitle: "With divine blessings, we joyfully invite you",
+    cta: "Open Our Invitation",
+    countdownComplete: "The day is here",
+  },
+  couple: {
+    ariaLabel: "Meet The Couple",
+    label: "Meet The Couple",
+    title: "Two Hearts, One Promise",
+    unionQuote: "United in love, guided by tradition, blessed by family",
+    groomRole: "The Groom",
+    brideRole: "The Bride",
+    groomParentsLabel: "Groom's Parents",
+    brideParentsLabel: "Bride's Parents",
+    coupleQuote:
+      "By destiny's design, with our families' blessings and the grace of the divine, we come together in the sacred bond of marriage.",
+  },
+  story: {
+    ariaLabel: "Our Journey",
+    scene: "Scene II",
+    title: "Our Journey",
+    subtitle: "Moments that led us to this sacred day",
+    swipeHint: "Swipe to explore our story →",
+  },
+  muhurtham: {
+    ariaLabel: "Auspicious Muhurtham",
+    sacredHeader: "Sacred Union",
+    title: "Auspicious Muhurtham",
+    muhurthamLabel: "Muhurtham",
+    auspiciousHour: "Auspicious hour of union",
+    samvatsaram: "Samvatsaram",
+    tithi: "Tithi",
+    nakshatram: "Nakshatram",
+    lagnam: "Lagnam",
+    venue: "Venue",
+    blessingIntro: "Seeking your blessings and presence",
+    quote:
+      "With the divine blessings of our elders and ancestors, we invite you to grace this sacred union with your presence and auspicious wishes.",
+  },
+  celebrations: {
+    ariaLabel: "Celebrations",
+    scene: "Scene III",
+    title: "Celebrations",
+    subtitle: "Two sacred moments woven into one grand celebration.",
+    kalyanam: {
+      title: "Kalyanam",
+      subtitle: "Sacred union under auspicious muhurtham",
+    },
+    reception: {
+      title: "Vindu",
+      subtitle: "Reception & dinner with family and loved ones",
+      venue: "At the wedding venue",
+    },
+  },
+  gallery: {
+    ariaLabel: "Memories",
+    scene: "Scene IV",
+    title: "Gallery",
+    subtitle: "Precious moments from our journey together",
+  },
+  video: {
+    ariaLabel: "Wedding Video",
+    label: "Cinematic Preview",
+    title: "Our Wedding Film",
+    subtitle: "A glimpse into the love that brought us here",
+    playLabel: "Play video",
+  },
+  wishes: {
+    ariaLabel: "Wedding Wishes",
+    scene: "Scene V",
+    title: "Wedding Wishes",
+    subtitle:
+      "Heartfelt blessings and beautiful words from our beloved family and friends.",
+    leaveWish: "Leave a Wish",
+  },
+  location: {
+    ariaLabel: "Venue Location",
+    scene: "Scene VI · The Final Chapter",
+    title: "Find Us",
+    subtitle: "Follow the path that leads to our celebration at Kovvur.",
+    venueLabel: "Venue",
+    kalyanamLabel: "Kalyanam",
+    vinduLabel: "Vindu",
+    directionsCta: "Begin Your Journey",
+    footerMessage:
+      "We eagerly await the joy of celebrating this beautiful day with you and your family.",
+  },
+  footer: {
+    ariaLabel: "Site footer",
+    blessings:
+      "With hearts full of gratitude, we eagerly await your presence and blessings as we begin this beautiful journey together.",
+    emotionalNote:
+      "Your love and blessings mean the world to us. We cannot wait to share this sacred celebration with you.",
+    copyright: "Crafted with ❤️ and countless dreams",
+  },
+};

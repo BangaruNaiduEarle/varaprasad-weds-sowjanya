@@ -1,0 +1,367 @@
+/*
+ * Muhurtham invitation card — content-first typography hierarchy.
+ */
+
+.muhurtham-invitation {
+  --mi-gold: #d4af37;
+  --mi-yellow: #efbf04;
+  --mi-maroon: #6b0f1a;
+  --mi-kumkuma: #800020;
+  --mi-champagne: #f7e7ce;
+  --mi-ivory: #fff8f0;
+  --mi-cream: #f5efe6;
+  --mi-navy: #1d2635;
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.muhurtham-invitation__shell {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* ── Card shell ── */
+.muhurtham-invitation__card {
+  position: relative;
+  width: min(92vw, 400px);
+  overflow: hidden;
+  border-radius: 1.35rem;
+  background: linear-gradient(
+    175deg,
+    var(--mi-ivory) 0%,
+    var(--mi-champagne) 48%,
+    var(--mi-cream) 100%
+  );
+  border: 2.5px solid color-mix(in srgb, var(--mi-gold) 62%, transparent);
+  box-shadow:
+    0 8px 32px color-mix(in srgb, var(--mi-maroon) 14%, transparent),
+    0 24px 64px color-mix(in srgb, var(--mi-gold) 12%, transparent),
+    inset 0 1px 0 color-mix(in srgb, var(--mi-ivory) 95%, transparent);
+}
+
+.muhurtham-invitation__inner-frame {
+  pointer-events: none;
+  position: absolute;
+  inset: 0.75rem;
+  border-radius: 0.95rem;
+  border: 1px solid color-mix(in srgb, var(--mi-gold) 22%, transparent);
+}
+
+.muhurtham-invitation__portrait-body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.25rem 1.5rem 2.5rem;
+}
+
+/* ── Sacred header ── */
+.muhurtham-invitation__sacred-header {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--mi-kumkuma);
+}
+
+/* ── Title ── */
+.muhurtham-invitation__title {
+  margin-top: 0.75rem;
+  font-size: clamp(1.5rem, 5.5vw, 2rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mi-maroon);
+}
+
+/* ── Date ── */
+.muhurtham-invitation__date-block {
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+.muhurtham-invitation__date-day {
+  font-size: clamp(0.9375rem, 3.5vw, 1.0625rem);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--mi-kumkuma);
+}
+
+.muhurtham-invitation__date-value {
+  margin-top: 0.5rem;
+  font-size: clamp(1.625rem, 6.5vw, 2.125rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: var(--mi-maroon);
+}
+
+/* ── Time hero (focal point) ── */
+.muhurtham-invitation__time-hero {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 2rem 1.25rem 1.75rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--mi-yellow) 28%, var(--mi-champagne)) 0%,
+    color-mix(in srgb, var(--mi-gold) 22%, var(--mi-ivory)) 55%,
+    color-mix(in srgb, var(--mi-champagne) 90%, var(--mi-ivory)) 100%
+  );
+  border: 3px solid color-mix(in srgb, var(--mi-gold) 72%, var(--mi-yellow));
+  box-shadow:
+    0 12px 40px color-mix(in srgb, var(--mi-gold) 28%, transparent),
+    0 4px 16px color-mix(in srgb, var(--mi-maroon) 12%, transparent),
+    inset 0 2px 24px color-mix(in srgb, var(--mi-yellow) 22%, transparent),
+    inset 0 -1px 0 color-mix(in srgb, var(--mi-gold) 35%, transparent);
+}
+
+.muhurtham-invitation__time-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--mi-kumkuma);
+}
+
+.muhurtham-invitation__time-value {
+  margin-top: 0.65rem;
+  font-size: clamp(3rem, 14vw, 4.25rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: var(--mi-maroon);
+  text-shadow:
+    0 0 48px color-mix(in srgb, var(--mi-gold) 45%, transparent),
+    0 2px 8px color-mix(in srgb, var(--mi-maroon) 18%, transparent);
+}
+
+.muhurtham-invitation__time-sub {
+  margin-top: 0.75rem;
+  font-size: clamp(0.875rem, 3.2vw, 1rem);
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--mi-kumkuma);
+}
+
+/* ── Detail rows ── */
+.muhurtham-invitation__detail-block {
+  width: 100%;
+  padding: 0.9rem 0;
+}
+
+.muhurtham-invitation__detail-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--mi-kumkuma);
+}
+
+.muhurtham-invitation__detail-value {
+  margin-top: 0.45rem;
+  font-size: clamp(1.0625rem, 4vw, 1.2rem);
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--mi-maroon);
+}
+
+.muhurtham-invitation__detail-block--highlight {
+  padding: 1rem 0.75rem;
+  border-radius: 0.65rem;
+  background: color-mix(in srgb, var(--mi-champagne) 55%, var(--mi-ivory));
+}
+
+.muhurtham-invitation__detail-block--highlight .muhurtham-invitation__detail-value {
+  font-size: clamp(1.125rem, 4.2vw, 1.3125rem);
+  font-weight: 700;
+}
+
+.muhurtham-invitation__detail-block--venue {
+  padding: 1.25rem 1rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--mi-champagne) 70%, var(--mi-ivory)) 0%,
+    color-mix(in srgb, var(--mi-ivory) 90%, var(--mi-cream)) 100%
+  );
+  border: 1.5px solid color-mix(in srgb, var(--mi-gold) 38%, transparent);
+}
+
+.muhurtham-invitation__detail-block--venue .muhurtham-invitation__detail-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+}
+
+.muhurtham-invitation__detail-block--venue .muhurtham-invitation__detail-value {
+  font-size: clamp(1.125rem, 4.5vw, 1.375rem);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.muhurtham-invitation__venue-divider {
+  margin: 0.5rem 0 0.25rem;
+}
+
+/* ── Blessing quote ── */
+.muhurtham-invitation__blessing {
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 1.25rem 1rem 1rem;
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--mi-champagne) 42%, var(--mi-ivory));
+  border: 1px solid color-mix(in srgb, var(--mi-gold) 24%, transparent);
+}
+
+.muhurtham-invitation__blessing-divider {
+  margin: 0 0 1rem !important;
+}
+
+.muhurtham-invitation__blessing-intro {
+  font-size: clamp(1.0625rem, 4vw, 1.25rem);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--mi-kumkuma);
+}
+
+.muhurtham-invitation__blessing-quote {
+  margin-top: 0.85rem;
+  font-size: clamp(0.9375rem, 3.5vw, 1.0625rem);
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--mi-maroon);
+}
+
+/* ── Dividers ── */
+.muhurtham-invitation__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.muhurtham-invitation__divider-line {
+  flex: 1;
+  max-width: 5.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--mi-gold), transparent);
+}
+
+/* ── Mandala (minimal) ── */
+.muhurtham-invitation__mandala-watermark {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.muhurtham-invitation__mandala-watermark img {
+  width: 78%;
+  height: auto;
+  max-height: 88%;
+  object-fit: contain;
+  opacity: var(--mi-watermark-opacity, 0.032);
+}
+
+.muhurtham-invitation__mandala-corner {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: var(--mi-corner-opacity, 0.04);
+}
+
+.muhurtham-invitation__mandala-corner--tl {
+  top: 0.35rem;
+  left: 0.35rem;
+}
+
+.muhurtham-invitation__mandala-corner--tr {
+  top: 0.35rem;
+  right: 0.35rem;
+  transform: scaleX(-1);
+}
+
+.muhurtham-invitation__mandala-corner--bl {
+  bottom: 0.35rem;
+  left: 0.35rem;
+  transform: scaleY(-1);
+}
+
+.muhurtham-invitation__mandala-corner--br {
+  bottom: 0.35rem;
+  right: 0.35rem;
+  transform: scale(-1);
+}
+
+/* Hide corner mandalas on small screens — less visual noise */
+@media (max-width: 767px) {
+  .muhurtham-invitation__mandala-corner {
+    display: none;
+  }
+}
+
+/* ── Landscape (tablet/desktop) ── */
+@media (min-width: 768px) {
+  .muhurtham-invitation__card {
+    width: min(94vw, 960px);
+  }
+
+  .muhurtham-invitation__portrait-body {
+    display: none;
+  }
+
+  .muhurtham-invitation__landscape-body {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 2.5rem 2.75rem;
+    min-height: 360px;
+  }
+
+  .muhurtham-invitation__landscape-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2.25rem;
+    border-right: 1.5px solid color-mix(in srgb, var(--mi-gold) 35%, transparent);
+  }
+
+  .muhurtham-invitation__landscape-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2.25rem;
+    gap: 0.25rem;
+  }
+
+  .muhurtham-invitation__time-hero--landscape {
+    margin: 1.5rem 0 0;
+    padding: 2rem 1.75rem;
+  }
+
+  .muhurtham-invitation__mandala-watermark img {
+    width: 50%;
+    max-height: 92%;
+  }
+}
+
+@media (max-width: 767px) {
+  .muhurtham-invitation__landscape-body {
+    display: none;
+  }
+}
