@@ -23,7 +23,7 @@ export const INVITATION_DATA = {
   },
 
   bride: {
-    title: "Chi.La.Sau.",
+    title: "Chi.La.Sow.",
     titleTelugu: "చి||ల||సౌ||",
     name: "Sowjanya",
     nameTelugu: "సౌజన్య",
@@ -41,14 +41,14 @@ export const INVITATION_DATA = {
 
   parents: {
     groom: {
-      father: "Sri Papa Trimurtulu",
+      father: "Sri Papa Trimurthulu",
       mother: "Smt. Gowri Venkata Padmavathi",
       fatherTelugu: "శ్రీ పాపా త్రిమూర్తులు",
       motherTelugu: "శ్రీమతి గౌరి వెంకట పద్మావతి",
     },
     bride: {
       father: "Sri Jakka Satyanarayana",
-      mother: "Smt. Sujata",
+      mother: "Smt. Sujatha",
       fatherTelugu: "శ్రీ జక్కా సత్యనారాయణ",
       motherTelugu: "శ్రీమతి సుజాత",
     },
