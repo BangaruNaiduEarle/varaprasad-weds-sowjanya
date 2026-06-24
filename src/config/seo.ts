@@ -28,7 +28,7 @@ export const OG_DESCRIPTION =
 
 export const OG_SITE_NAME = `${GROOM_NAME} Weds ${BRIDE_NAME}`;
 
-export const OG_IMAGE_PATH = "/images/bride-groom/ds27.jpeg";
+export const OG_IMAGE_PATH = "https://varaprasad-weds-sowjanya.vercel.app/images/bride-groom/ds27.jpeg";
 
 export const OG_IMAGE_ALT = `${GROOM_NAME} and ${BRIDE_NAME} Wedding Invitation`;
 
