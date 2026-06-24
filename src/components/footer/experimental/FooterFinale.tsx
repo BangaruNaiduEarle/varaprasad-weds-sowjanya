@@ -85,7 +85,7 @@ export function FooterFinale() {
           <motion.p variants={itemVariants} className="site-footer-finale__note">
             &ldquo;{t.footer.emotionalNote}&rdquo;
           </motion.p>
-
+{/* 
           <motion.div variants={itemVariants} className="site-footer-finale__social">
             {FOOTER_SOCIAL.map((link) => (
               <motion.a
@@ -104,7 +104,7 @@ export function FooterFinale() {
                 <SocialIcon id={link.id} />
               </motion.a>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         <motion.p variants={itemVariants} className="site-footer-finale__copyright">
