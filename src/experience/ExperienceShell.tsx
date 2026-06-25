@@ -25,11 +25,11 @@ function ExperienceChrome({ children }: { readonly children: React.ReactNode }) 
   return (
     <>
       {/* <GlobalAmbient intensity={ambient} /> */}
-      <StoryProgress
+      {/* <StoryProgress
         activeIndex={activeChapterIndex}
         progress={chapterProgress}
         total={EXPERIENCE_CHAPTERS.length}
-      />
+      /> */}
       <CinematicCurtain chapterIndex={activeChapterIndex} />
 
       <div
