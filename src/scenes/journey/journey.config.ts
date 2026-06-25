@@ -5,7 +5,7 @@ export const JOURNEY_ITEMS: readonly JourneyItem[] = [
     id: "destiny-hearts",
     title: "Destiny Hearts",
     date: "22nd November 2025",
-    image: "/images/bride-groom/ds23.jpeg",
+    image: "/images/bride-groom/ds28.jpeg",
     aspect: "portrait",
     description:
       "What began with a simple glance slowly blossomed into a bond written by destiny.",

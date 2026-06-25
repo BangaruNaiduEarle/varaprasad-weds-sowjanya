@@ -1,15 +1,15 @@
 export const SITE_URL = "https://varaprasad-weds-soujanya.vercel.app";
 
-export const GROOM_NAME = "Durga Venkata Varaprasad";
+export const GROOM_NAME = "Varaprasad";
 export const BRIDE_NAME = "Sowjanya";
 
 export const SITE_TITLE = `${GROOM_NAME} ❤️ ${BRIDE_NAME} | Wedding Invitation`;
 
 export const SITE_DESCRIPTION =
-  "With the blessings of our families, we warmly invite you to celebrate the sacred union of Durga Venkata Varaprasad and Sowjanya. Join us as we begin this beautiful journey together and seek your love, blessings, and presence on our special day.";
+  "With the blessings of our families, we warmly invite you to celebrate the sacred union of Varaprasad and Sowjanya. Join us as we begin this beautiful journey together and seek your love, blessings, and presence on our special day.";
 
 export const SITE_KEYWORDS = [
-  "Durga Venkata Varaprasad",
+  "Varaprasad",
   "Sowjanya",
   "Telugu Wedding",
   "South Indian Wedding",
@@ -24,7 +24,7 @@ export const SITE_KEYWORDS = [
 export const OG_TITLE = SITE_TITLE;
 
 export const OG_DESCRIPTION =
-  "Join us in celebrating the sacred union of Durga Venkata Varaprasad and Sowjanya and bless us as we begin this beautiful journey together.";
+  "Join us in celebrating the sacred union of Varaprasad and Sowjanya and bless us as we begin this beautiful journey together.";
 
 export const OG_SITE_NAME = `${GROOM_NAME} Weds ${BRIDE_NAME}`;
 

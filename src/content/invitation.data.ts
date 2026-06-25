@@ -13,7 +13,7 @@ export const INVITATION_DATA = {
   groom: {
     title: "Chi.",
     titleTelugu: "చి||",
-    name: "Durga Venkata Varaprasad",
+    name: "Varaprasad",
     nameTelugu: "దుర్గా వెంకట వరప్రసాద్",
     qualification: "C.A.",
     hometown:
