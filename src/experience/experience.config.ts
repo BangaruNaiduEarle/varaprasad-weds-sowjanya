@@ -5,7 +5,7 @@ export const EXPERIENCE_CHAPTERS: readonly ExperienceChapter[] = [
   { id: "story", dockId: "story", title: "Our Journey", label: "II" },
   { id: "events", dockId: "events", title: "Celebrations", label: "III" },
   { id: "gallery", dockId: "gallery", title: "Memories", label: "IV" },
-  { id: "blessings", dockId: "blessings", title: "Wishes", label: "V" },
+  { id: "video", dockId: "video", title: "Pre Wedding Shoot", label: "V" },
   { id: "location", dockId: "location", title: "Venue", label: "VI" },
 ] as const;
 

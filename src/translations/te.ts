@@ -24,7 +24,7 @@ export const te: Translations = {
     story: "కథ",
     events: "వేడుకలు",
     gallery: "ఫోటో గ్యాలరీ",
-    blessings: "ఆశీర్వాదాలు",
+    video: "ప్రీ వెడ్డింగ్ షూట్",
     location: "వేదిక",
   },
   hero: {

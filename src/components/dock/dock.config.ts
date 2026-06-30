@@ -1,10 +1,10 @@
 import {
   BookOpen,
   CalendarHeart,
+  Clapperboard,
   Heart,
   Images,
   MapPin,
-  Sparkles,
 } from "lucide-react";
 
 import type { DockNavItem } from "./dock.types";
@@ -35,10 +35,10 @@ export const DOCK_NAV_ITEMS: readonly DockNavItem[] = [
     icon: Images,
   },
   {
-    id: "blessings",
-    label: "Blessings",
-    href: "#blessings",
-    icon: Sparkles,
+    id: "video",
+    label: "Pre Wedding Shoot",
+    href: "#video",
+    icon: Clapperboard,
   },
   {
     id: "location",

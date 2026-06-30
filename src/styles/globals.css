@@ -374,6 +374,27 @@
   html[data-locale="te"] .hero-couple-name {
     font-family: var(--font-telugu-heading), var(--font-script), serif;
   }
+
+  .video-progress::-webkit-slider-thumb {
+    appearance: none;
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 9999px;
+    border: 2px solid var(--color-ivory);
+    background: linear-gradient(135deg, var(--color-gold), var(--color-yellow));
+    box-shadow: 0 0 10px color-mix(in srgb, var(--color-gold) 45%, transparent);
+    cursor: pointer;
+  }
+
+  .video-progress::-moz-range-thumb {
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 9999px;
+    border: 2px solid var(--color-ivory);
+    background: linear-gradient(135deg, var(--color-gold), var(--color-yellow));
+    box-shadow: 0 0 10px color-mix(in srgb, var(--color-gold) 45%, transparent);
+    cursor: pointer;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {

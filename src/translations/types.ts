@@ -24,7 +24,7 @@ export interface Translations {
     readonly story: string;
     readonly events: string;
     readonly gallery: string;
-    readonly blessings: string;
+    readonly video: string;
     readonly location: string;
   };
   readonly hero: {

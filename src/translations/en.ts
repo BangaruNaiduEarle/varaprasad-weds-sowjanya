@@ -24,7 +24,7 @@ export const en: Translations = {
     story: "Story",
     events: "Events",
     gallery: "Gallery",
-    blessings: "Blessings",
+    video: "Pre Wedding Shoot",
     location: "Location",
   },
   hero: {

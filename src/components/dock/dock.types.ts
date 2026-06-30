@@ -5,7 +5,7 @@ export type DockItemId =
   | "story"
   | "events"
   | "gallery"
-  | "blessings"
+  | "video"
   | "location";
 
 export type DockVariant = "desktop" | "mobile" | "floating";
